@@ -53,16 +53,17 @@ const getData = async () => {
   
   // to find all languages in an array
   const getAllLaunguage = () => {
-            recdata.map((item, index) => {
-                const bhasha = item.languages.map((language) => language.name)
-                arr2.push(bhasha)
-            });
+    recdata.map((item, index) => {
+      const bhasha = item.languages.map((language) => language.name);
+      arr2.push(bhasha);
+    });
 
     arr2.map((item, index) => {
-      const newArray = [...item]
+      const newArray = [...item];
       console.log(newArray);
-      return newArray
-    })
+      return newArray;
+    });
+  };
         
        getAllLaunguage()
   
